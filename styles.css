@@ -1,0 +1,150 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Full-height background */
+.bg-header {
+   background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  color: #252B42; /* Adjust text color as needed */
+  overflow: hidden;
+}
+
+/* Overlay for better text readability */
+.bg-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FDF3F1; 
+  z-index: 1;
+}
+
+/* Image positioned to the right side of the window */
+.header-image {
+  position: absolute;
+  top: 50%;
+  right: 0; /* Aligns image to the right side */
+  transform: translateY(-50%); /* Center vertically */
+  width: 60%; /* Adjust as needed */
+  height: auto;
+  z-index: 2; /* Ensures image is above the background but below text */
+  opacity: 0.7; /* Optional: adjust opacity for effect */
+}
+
+/* Text and content centered above the image */
+.header-content {
+  left:0;
+  position: relative;
+  z-index: 3;
+  padding: 20px;
+}
+
+.navbar {
+  z-index: 4; /* Ensures navbar is above all other elements */
+}
+
+.navbar-brand, .nav-link {
+  color: #1c2333 !important;
+}
+
+/* Arrow link styles */
+.arrow-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+.arrow-link .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Smooth transition for arrow */
+}
+
+.arrow-link:hover .arrow {
+  transform: translateX(5px); /* Move arrow to the right on hover */
+}
+
+/* Carousel caption styling */
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.carousel-caption h5 {
+  color: #16c049;
+  margin-bottom: 10px;
+}
+
+/* Social icons styling */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #16c049;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Styling for the teacher cards */
+.teacher-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.teacher-card:hover {
+  transform: scale(1.05);
+}
+
+.teacher-profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto 10px;
+  display: block;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+  display: none; /* Initially hidden */
+}
+
+/* Styling for input with error */
+.input-error {
+  border: 1px solid red;
+}
